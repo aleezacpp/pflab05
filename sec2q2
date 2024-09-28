@@ -1,0 +1,16 @@
+/*Create a program that checks if a person is eligible to vote based on their age and citizenship
+status.*/
+#include <stdio.h>
+int main(){
+    int age;
+    char citizenship; //if user has citizenship or not (Y/N)
+    printf("enter age : \n");
+    scanf("%d", &age);
+    printf("do you have a pakistani citizenship? (Y/N) \n");
+    scanf(" %c", &citizenship);
+    if (age>=18 && citizenship=='Y') {
+        printf("eligible to vote \n");
+    }
+    else printf("ineligible to vote \n");
+    return 0;
+}
