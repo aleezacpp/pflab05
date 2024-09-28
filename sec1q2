@@ -1,0 +1,24 @@
+/*Create a program that determines if a number is positive, negative, or zero, and if it’s positive,
+checks if it’s an even or odd number.*/
+#include <stdio.h>
+int main(){
+    int num;
+    printf("enter num : \n");
+    scanf("%d", &num);
+    if (num>0) {
+        printf("positive \n");
+        if (num%2 == 0) {
+            printf("even \n");
+        }
+        else printf("odd \n");
+    }
+    else if(num<0){
+        printf("negative \n");
+        if (num%2 != 0) {
+            printf("odd \n");
+        }
+        else printf("even \n");
+    }
+    else printf("zero \n");
+return 0;
+}
