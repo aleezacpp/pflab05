@@ -1,0 +1,39 @@
+/*Create a program that calculates the final grade of a student based on multiple criteria,
+including attendance, assignment scores, and exam results, using nested decision structures.*/
+#include <stdio.h>
+int main(){
+    float att; //attendance 
+    int asc; //assignment scores
+    int er; //exam results
+    printf("enter attendance : \n");
+    scanf("%f", &att);
+    if (att>=80.00) {
+        printf("enter assignment score out of 20 : \n");
+        scanf("%d", &asc);
+        if (asc>=9 && asc<=20) {
+            printf("enter overall exam score out of 100 : \n");
+            scanf("%d", &er);
+            if (er>=89) {
+                printf("A grade \n");
+            }
+            else if (er>=79) {
+                printf("B graade \n");
+            }
+            else if (er>=69) {
+                printf("C grade \n");
+            }
+            else if (er>=59) {
+                printf("D grade \n");
+            }
+            else printf("F grade \n");
+        }
+        else if (asc<9) {
+            printf("insufficient assignment score \n");
+        }
+        else if (asc>20) {
+            printf("invalid assignment score \n");
+        }
+    }
+     else printf("insufficient attendance; NOT ELIGIBLE FOR RESULTS \n");
+    return 0;
+}
