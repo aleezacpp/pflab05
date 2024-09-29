@@ -1,0 +1,26 @@
+/*Write a program to find the greatest of three numbers using nested if-else statements.*/
+#include <stdio.h>
+int main(){
+    int n1;
+    int n2;
+    int n3;
+    printf("enter n1 : \n");
+    scanf("%d", &n1);
+    printf("enter n2 : \n");
+    scanf("%d", &n2);
+    printf("enter n3 : \n");
+    scanf("%d", &n3);
+    if (n1>n2) {
+        if (n1>n3) {
+            printf("n1 greatest \n");
+        }
+        else printf("n3 greatest \n");
+    }
+    else {
+        if (n2>n3) {
+            printf("n2 greatest \n");
+        }
+        else printf("n3 greatest \n");
+    }
+    return 0;
+}
