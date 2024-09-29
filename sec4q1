@@ -1,0 +1,12 @@
+/*Write a program to swap two numbers using bitwise XOR.*/
+#include <stdio.h>
+int main(){
+    int a=2; //0010
+    int b=3; //0011
+    a = a^b;
+    b = a^b;
+    a = a^b;
+    printf("a : %d \n", a);
+    printf("b : %d \n", b);
+    return 0;
+}
