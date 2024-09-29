@@ -1,0 +1,38 @@
+/*Develop a program that uses logical operators to determine if a person is eligible for a loan
+based on age, income, and credit score.*/
+#include <stdio.h>
+int main(){
+    int age;
+    float income; 
+    int creds; //creditscore
+    printf("age : \n");
+    scanf("%d", &age);
+    if (age>=55 && age<=75){
+        printf("enter income : \n");
+        scanf("%f", &income);
+        printf("enter cred score : \n");
+        scanf("%d", &creds);
+        if (income>=10000 && creds>=2000) {
+            printf("eligible for full-ride loan \n");
+        }
+        else if (income>=20000 && creds>=3000){
+            printf("eligible for partial loan \n");
+        }
+        else if(income<=10000 || creds<=2000) {
+            printf("eligible for quarter percent loan \n");
+        }
+    }
+    else if (age>=45 && age<55) {
+        printf("enter income : \n");
+        scanf("%f", &income);
+        printf("enter cred score : \n");
+        scanf("%d", &creds);
+        if (income>=30000 && creds>=2500) {
+            printf("eligible for partial ride loan \n");
+        }
+        else printf("eligible for quarter percent loan \n");
+
+    }
+    else printf("ineligible age for loan \n");
+    return 0;
+}
