@@ -1,0 +1,18 @@
+/*Write a program that uses bitwise operators to perform encryption and decryption of a
+character.*/
+#include <stdio.h>
+int main(){
+    char word; //character to be encrypted
+    char enc; //encrypted character
+    char dec; //decrypted character
+    char key; //key
+    printf("enter character to be encrypted : \n");
+    scanf(" %c", &word);
+    printf("enter key : \n");
+    scanf(" %c", &key);
+    enc = word^key ;
+    printf("encrypted character : %c \n", enc);
+    dec = enc^key;
+    printf("decrypted character : %c \n", dec);
+    return 0;
+}
