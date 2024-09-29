@@ -1,0 +1,18 @@
+/*Create a program that calculates the sum of digits of a number until the result is a single digit
+(e.g., 123 -> 6).*/
+#include <stdio.h>
+int main(){
+    int n;
+    printf("enter n : \n");
+    scanf("%d", &n);
+    while (n>=10){
+        int sum=0;
+        while (n>0) {
+            sum = sum + n%10;
+            n = n/10;
+            
+        }
+        printf("%d", sum);
+    }
+return 0;
+}
